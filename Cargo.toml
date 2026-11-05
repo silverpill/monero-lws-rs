@@ -14,7 +14,7 @@ license = "MIT"
 documentation = "https://docs.rs/monero-lws"
 repository = "https://github.com/monero-rs/monero-lws"
 description = "RPC client for Monero light wallet server"
-rust-version = "1.88.0"
+rust-version = "1.85.0"
 
 [dependencies]
 anyhow = "1"
@@ -32,7 +32,8 @@ tracing = "0.1"
 # Async
 rand = "0.8.4"
 tokio = { version = "1.12.0", features = ["full"] }
-monero-rpc = { version = "0.6.0" }
+#monero-rpc = { version = "0.6.0" }
+monero-rpc = { git = "https://github.com/silverpill/monero-rpc-rs", rev = "9d582cc06679baaf8b7c6376a4fa2369d7ffc2ec" }
 
 [lints.rust]
 # The warning comes from fixed-hash
